@@ -1,0 +1,541 @@
+{
+	"info": {
+		"_postman_id": "a109e84e-99c6-4cfa-a510-6c0e13fe198b",
+		"name": "Demo_JLascar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46413614",
+		"_collection_link": "https://jose-7869442.postman.co/workspace/Jose's-Workspace~c39be812-03e3-4119-8efe-2b96fbb961f6/collection/46413614-a109e84e-99c6-4cfa-a510-6c0e13fe198b?action=share&source=collection_link&creator=46413614"
+	},
+	"item": [
+		{
+			"name": "User Controller",
+			"item": [
+				{
+					"name": "Create user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJuYW1lIjoiSm9zZSBMYXNjYXIiLCJzdWIiOiJwZXBsYXNjYXJAZ21haWwuY29tIiwiaWF0IjoxNzUyMDEwMjc4LCJleHAiOjE3NTIwMTYyNzh9.Op7Tu-XKuUvUjwaWWeKioAASvWe6CeS0PkynPxJ0UB39zEMMRXlcFXQgNgaMjOI5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Josae aLascar\",\r\n    \"email\": \"peplasacaraa@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/previred-backend/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"previred-backend",
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJuYW1lIjoiSm9zZSBMYXNjYXIiLCJzdWIiOiJwZXBsYXNjYXJAZ21haWwuY29tIiwiaWF0IjoxNzUyMDEwMjc4LCJleHAiOjE3NTIwMTYyNzh9.Op7Tu-XKuUvUjwaWWeKioAASvWe6CeS0PkynPxJ0UB39zEMMRXlcFXQgNgaMjOI5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/previred-backend/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"previred-backend",
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJuYW1lIjoiSm9zZSBMYXNjYXIiLCJzdWIiOiJwZXBsYXNjYXJAZ21haWwuY29tIiwiaWF0IjoxNzUyMDEwMjc4LCJleHAiOjE3NTIwMTYyNzh9.Op7Tu-XKuUvUjwaWWeKioAASvWe6CeS0PkynPxJ0UB39zEMMRXlcFXQgNgaMjOI5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/previred-backend/api/users/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"previred-backend",
+								"api",
+								"users",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJuYW1lIjoiSm9zZSBMYXNjYXIiLCJzdWIiOiJwZXBsYXNjYXJAZ21haWwuY29tIiwiaWF0IjoxNzUyMDEwMjc4LCJleHAiOjE3NTIwMTYyNzh9.Op7Tu-XKuUvUjwaWWeKioAASvWe6CeS0PkynPxJ0UB39zEMMRXlcFXQgNgaMjOI5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Antonio\",\r\n    \"email\": \"antonio@previred.cl\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/previred-backend/api/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"previred-backend",
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJuYW1lIjoiSm9zZSBMYXNjYXIiLCJzdWIiOiJwZXBsYXNjYXJAZ21haWwuY29tIiwiaWF0IjoxNzUyMDEwMjc4LCJleHAiOjE3NTIwMTYyNzh9.Op7Tu-XKuUvUjwaWWeKioAASvWe6CeS0PkynPxJ0UB39zEMMRXlcFXQgNgaMjOI5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/previred-backend/api/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"previred-backend",
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Task Controller",
+			"item": [
+				{
+					"name": "Create task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJuYW1lIjoiSm9zZSBMYXNjYXIiLCJzdWIiOiJwZXBsYXNjYXJAZ21haWwuY29tIiwiaWF0IjoxNzUyMDEwMjc4LCJleHAiOjE3NTIwMTYyNzh9.Op7Tu-XKuUvUjwaWWeKioAASvWe6CeS0PkynPxJ0UB39zEMMRXlcFXQgNgaMjOI5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Improve error handling234\",\r\n    \"description\": \"Make custom exceptions\",\r\n    \"completed\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/previred-backend/api/tasks?userId=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"previred-backend",
+								"api",
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find all task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJuYW1lIjoiSm9zZSBMYXNjYXIiLCJzdWIiOiJwZXBsYXNjYXJAZ21haWwuY29tIiwiaWF0IjoxNzUyMDEwMjc4LCJleHAiOjE3NTIwMTYyNzh9.Op7Tu-XKuUvUjwaWWeKioAASvWe6CeS0PkynPxJ0UB39zEMMRXlcFXQgNgaMjOI5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/previred-backend/api/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"previred-backend",
+								"api",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find task by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJuYW1lIjoiSm9zZSBMYXNjYXIiLCJzdWIiOiJwZXBsYXNjYXJAZ21haWwuY29tIiwiaWF0IjoxNzUyMDEwMjc4LCJleHAiOjE3NTIwMTYyNzh9.Op7Tu-XKuUvUjwaWWeKioAASvWe6CeS0PkynPxJ0UB39zEMMRXlcFXQgNgaMjOI5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/previred-backend/api/tasks/by-user/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"previred-backend",
+								"api",
+								"tasks",
+								"by-user",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update task by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJuYW1lIjoiSm9zZSBMYXNjYXIiLCJzdWIiOiJwZXBsYXNjYXJAZ21haWwuY29tIiwiaWF0IjoxNzUyMDEwMjc4LCJleHAiOjE3NTIwMTYyNzh9.Op7Tu-XKuUvUjwaWWeKioAASvWe6CeS0PkynPxJ0UB39zEMMRXlcFXQgNgaMjOI5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Create readme 3\",\r\n    \"description\": \"Task actualizada\",\r\n    \"completed\": true,\r\n    \"dueDate\": \"2025-07-05\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/previred-backend/api/tasks/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"previred-backend",
+								"api",
+								"tasks",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete task by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJuYW1lIjoiSm9zZSBMYXNjYXIiLCJzdWIiOiJwZXBsYXNjYXJAZ21haWwuY29tIiwiaWF0IjoxNzUyMDEwMjc4LCJleHAiOjE3NTIwMTYyNzh9.Op7Tu-XKuUvUjwaWWeKioAASvWe6CeS0PkynPxJ0UB39zEMMRXlcFXQgNgaMjOI5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/previred-backend/api/tasks/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"previred-backend",
+								"api",
+								"tasks",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Token Creation",
+			"item": [
+				{
+					"name": "Register user",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJuYW1lIjoieWl0YW54Iiwic3ViIjoiam9obi5kb2VAeWkuY29tIiwiaWF0IjoxNzUxOTEzNDgzLCJleHAiOjE3NTE5MTcwODN9.6U1DbjV9s8BJivtS7MmRO6jDsv5zp9CYWf50tjQ4swMKO2lm9JKNMUIRLosCt38N",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Jose Lascar\",\r\n    \"email\": \"peplascar@gmail.com\",\r\n    \"password\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/previred-backend/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"previred-backend",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generate token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJuYW1lIjoiSm9zZSBMYXNjYXIiLCJzdWIiOiJwZXBsYXNjYXJAZ21haWwuY29tIiwiaWF0IjoxNzUyMDEwMjY1LCJleHAiOjE3NTIwMTYyNjV9.LfZPxaR0MjHUPJJFyK1xM8jGhk9i7uW-IRlsVoSyj22psQzN9q1bCPnskuyoOKsA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"peplascar@gmail.com\",\r\n    \"password\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/previred-backend/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"previred-backend",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "INFO",
+			"item": [
+				{
+					"name": "OpenAPI v3/api-docs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/previred-backend/v3/api-docs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"previred-backend",
+								"v3",
+								"api-docs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Swagger UI (Open on browser)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/previred-backend/swagger-ui/index.html",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"previred-backend",
+								"swagger-ui",
+								"index.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actuator info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/previred-backend/actuator",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"previred-backend",
+								"actuator"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
